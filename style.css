@@ -28,6 +28,44 @@ background-color:#fdd1d0;
     padding: 10px;
 }
 
+.tituloh1{
+    color: #f6eee1;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+    background-color: #a62c55;
+    padding: 10px;
+    margin: 0;
+}
+
+.fondoPrincipal{
+    background-image: url(./images/donnaprincipal.jpg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: cover;
+    padding: 15%;
+}
+
+.textoprincipal{
+    text-align:center;
+    color:#fdd1d0;
+    font-size: 40px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    
+
+}
+
+.texto-principal{
+    text-align:center;
+    color:#a62c55;
+    font-size: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
 .bloque1{
     display: grid;
     grid-template-columns: 50% 50%;
