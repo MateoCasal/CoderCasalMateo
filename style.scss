@@ -89,8 +89,9 @@ background-color: $color-fondo;
 }
 
 .bloque2{
-    display: grid;
-    grid-template-columns: 50% 50%;
+
+    @extend .bloque1;
+
 }
 
 
@@ -125,6 +126,20 @@ p{
 
 /* Nosotras */
 
+
+$estilosTitulon:( 
+centro: center,
+colors: #f6eee1,
+tFuente: 45px,
+);
+
+@mixin pnosotras($color,$size,$position){
+    color: $color;
+    font-size: $size;
+    text-align: $position;
+    
+}
+
 .fondonosotras{
     background-image:url(./images/maria.jpg);
     background-repeat: no-repeat;
@@ -139,16 +154,15 @@ p{
 
 
 .titulonosotras{
-    text-align: center;
-    color: #a62c55;
-    font-size: 45px;
-    font-family: 'Mate SC', serif;
+    text-align: map-get($estilosTitulon, centro);
+    color:  map-get($estilosTitulon, colors);
+    font-size:  map-get($estilosTitulon, tFuente);
+    font-family:'Mate SC', serif,
 }
 
 .parrafonosotras{
-    text-align: center;
-    color: #e67380;
-    font-size: 20px;
+    @include pnosotras(#a62c55,20px ,center )
+
 }
 
 
@@ -300,35 +314,65 @@ p{
     }
 
 
-    @media screen and (max-width:1023px) {
+    @media screen and (max-width: 1023px) {
         main {
-            padding-top: 0%;
-            background-color: #fdd1d0;
+          padding-top: 0%;
+          background-color: #fdd1d0;
         }
-    
-        .bloque1{
-            background-image:url(./images/Maquina.jpg);
+      
+        .bloque1 {
+          background-image: url(./images/maquina.jpg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          grid-template-columns: 100%;
+        }
+      
+        .bloque2 {
+          background-image: url(./images/operadora.jpg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          grid-template-columns: 100%;
+        }
+      
+        .imagen {
+          display: none;
+        }
+      
+        .itemstratam {
+          display: none;
+        }
+      
+        .titulo {
+          margin: 0;
+        }
+      }
+      
+        @media screen and (max-width: 500px) {
+          .fondonosotras {
+            background-image: url(./images/maria.jpg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            padding: 17%;
+          }
+          
+          .fondotextonosotras {
+            background-color: rgba(253, 209, 208, 0.6);
+          }
+          
+          .titulonosotras {
+            text-align: center;
+            color: #f6eee1;
+            font-size: 25px;
+            font-family: "Mate SC", serif;
+          }
+          
+          .parrafonosotras {
+            text-align: center;
+            color: #a62c55;
+            font-size: 15px;
+          }
+      
         }
-        .bloque2{
-            background-image:url(./images/operadora.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-        }
-    
-        .imagen{
-            display: none;
-        }
-    
-        .itemstratam{
-            display: none;
-        }
-
-        .titulo{
-            margin: 0;
-        }
-            
-    }

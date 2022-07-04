@@ -62,7 +62,7 @@ main {
   font-style: italic;
 }
 
-.bloque1 {
+.bloque1, .bloque2 {
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -76,11 +76,6 @@ main {
   font-family: "Barlow Condensed", sans-serif;
   color: #a62c55;
   font-size: 25px;
-}
-
-.bloque2 {
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 /*pie de pagina */
@@ -124,15 +119,15 @@ p {
 
 .titulonosotras {
   text-align: center;
-  color: #a62c55;
+  color: #f6eee1;
   font-size: 45px;
   font-family: "Mate SC", serif;
 }
 
 .parrafonosotras {
-  text-align: center;
-  color: #e67380;
+  color: #a62c55;
   font-size: 20px;
+  text-align: center;
 }
 
 /* Tratamientos */
@@ -272,11 +267,12 @@ h5 {
     background-color: #fdd1d0;
   }
 
-  .bloque1 {
-    background-image: url(./images/Maquina.jpg);
+  .bloque1, .bloque2 {
+    background-image: url(./images/maquina.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    grid-template-columns: 100%;
   }
 
   .bloque2 {
@@ -284,6 +280,7 @@ h5 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    grid-template-columns: 100%;
   }
 
   .imagen {
@@ -296,5 +293,31 @@ h5 {
 
   .titulo {
     margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fondonosotras {
+    background-image: url(./images/maria.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 17%;
+  }
+
+  .fondotextonosotras {
+    background-color: rgba(253, 209, 208, 0.6);
+  }
+
+  .titulonosotras {
+    text-align: center;
+    color: #f6eee1;
+    font-size: 25px;
+    font-family: "Mate SC", serif;
+  }
+
+  .parrafonosotras {
+    text-align: center;
+    color: #a62c55;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
