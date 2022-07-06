@@ -133,10 +133,11 @@ colors: #f6eee1,
 tFuente: 45px,
 );
 
-@mixin pnosotras($color,$size,$position){
+@mixin pnosotras($color,$size,$position,$weight){
     color: $color;
     font-size: $size;
     text-align: $position;
+    font-weight: $weight;
     
 }
 
@@ -161,7 +162,7 @@ tFuente: 45px,
 }
 
 .parrafonosotras{
-    @include pnosotras(#a62c55,20px ,center )
+    @include pnosotras(#a62c55,20px ,center,600 )
 
 }
 
@@ -189,6 +190,7 @@ tFuente: 45px,
   }
   .slide img{
     height: 100vh;
+    object-fit: cover;
     
   }
 
@@ -314,7 +316,7 @@ tFuente: 45px,
     }
 
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1200px) {
         main {
           padding-top: 0%;
           background-color: #fdd1d0;
@@ -367,12 +369,14 @@ tFuente: 45px,
             color: #f6eee1;
             font-size: 25px;
             font-family: "Mate SC", serif;
+            font-weight: 600;
           }
           
           .parrafonosotras {
             text-align: center;
             color: #a62c55;
             font-size: 15px;
+            font-weight: 600;
           }
       
         }

@@ -128,6 +128,7 @@ p {
   color: #a62c55;
   font-size: 20px;
   text-align: center;
+  font-weight: 600;
 }
 
 /* Tratamientos */
@@ -151,6 +152,8 @@ p {
 
 .slide img {
   height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 h5 {
@@ -261,7 +264,7 @@ h5 {
     margin-left: 0%;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
   main {
     padding-top: 0%;
     background-color: #fdd1d0;
@@ -313,11 +316,13 @@ h5 {
     color: #f6eee1;
     font-size: 25px;
     font-family: "Mate SC", serif;
+    font-weight: 600;
   }
 
   .parrafonosotras {
     text-align: center;
     color: #a62c55;
     font-size: 15px;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=style.css.map */
