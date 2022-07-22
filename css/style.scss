@@ -16,7 +16,7 @@ background-color: $color-fondo;
 
 .nav{
        a{
-            color: #e67380;
+            color: $color-fondo4;
             font-size: 20px;
             font-family: 'Mate SC', serif;
 
@@ -44,7 +44,7 @@ background-color: $color-fondo;
 }
 
 .fondoPrincipal{
-    background-image: url(./images/donnaprincipal.jpg);
+    background-image: url(../images/donnaprincipal.jpg);
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: cover;
@@ -53,10 +53,11 @@ background-color: $color-fondo;
 
 .textoprincipal{
     text-align:center;
-    color:#fdd1d0;
+    color: $color-fondo;
     font-size: 40px;
     font-family:'Barlow Condensed', sans-serif;
     font-weight: 500;
+    text-shadow: 2px 2px $color-fondo3;
     
 
 }
@@ -68,6 +69,7 @@ background-color: $color-fondo;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 500;
     font-style: italic;
+    text-shadow: 2px 2px #fdd1d0;
 
 }
 
@@ -83,7 +85,7 @@ background-color: $color-fondo;
 .items{
     padding: 15%;
     font-family:'Barlow Condensed', sans-serif;
-    color: $color-fonodo3;
+    color: $color-fondo3;
     font-size: 25px;
     
 }
@@ -110,7 +112,7 @@ p{
 .titulofooter{
     text-align: center;
     color: $color-fondo2;
-    background-color: $color-fonodo3;
+    background-color: $color-fondo3;
     font-family: 'Mate SC', serif;
 }
 
@@ -142,7 +144,7 @@ tFuente: 45px,
 }
 
 .fondonosotras{
-    background-image:url(./images/maria.jpg);
+    background-image:url(../images/maria.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -172,15 +174,15 @@ tFuente: 45px,
 
   .titulotratamientos{
     text-align: center;
-    background-color: #a62c55;
+    background-color: $color-fondo3;
     font-family:'Mate SC', serif;
-    color: #f6eee1;
+    color: $color-fondo2;
     font-size: 40px;
   }
 
   .parrafotratam{
       text-align: center;
-      color: #e67380;
+      color: $color-fondo4;
       font-size: 20px;
 
   }
@@ -195,7 +197,7 @@ tFuente: 45px,
   }
 
   h5 {
-    color: #e67380;
+    color:$color-fondo4;
     font-size: 30px;
   }
 
@@ -203,15 +205,23 @@ tFuente: 45px,
     font-size: 20px;
   }
 
+  .carousel-caption{
+    background-color: rgba(253, 209, 208, 0.6);
+    color: $color-fondo3;
+}
+
+  .d-none{
+    display: block !important;                /* Se agrega !important para pisar un estilo de bootsrap */
+  }
 
 
 /* Turnos */
 
 .tituloturnos{
     text-align: center;
-    background-color: #a62c55;
+    background-color: $color-fondo3;
     font-family:'Mate SC', serif;
-    color: #f6eee1;
+    color: $color-fondo2;
     font-size: 40px;
 }
 
@@ -219,7 +229,7 @@ tFuente: 45px,
     position: relative;
     bottom: 100px;
     width: 400px;
-    background:#a62c55;
+    background: $color-fondo3;
     padding: 30px;
     margin: auto;
     margin-top: 200px;
@@ -236,11 +246,11 @@ tFuente: 45px,
   
   .controles {
     width: 100%;
-    background: #a62c55;
+    background: $color-fondo3;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #fdd1d0;
+    border: 1px solid $color-fondo;
     font-family: 'calibri';
     font-size: 18px;
     color:white;
@@ -248,7 +258,7 @@ tFuente: 45px,
   
    .boton {
     width: 100%;
-    background: #e67380;
+    background: $color-fondo4;
     border: none;
     padding: 12px;
     color: white;
@@ -256,37 +266,43 @@ tFuente: 45px,
     font-size: 16px;
   }
 
-
+  .fondoTurnos{
+    background: linear-gradient(180deg, rgba(166,44,85,1) 0%, rgba(253,209,208,1) 50%, rgba(246,238,225,1) 100%);
+  }
 
 
   /* Ubicacion */
 
   .tituloubic{
     text-align: center;
-    background-color: #a62c55;
+    background-color: $color-fondo3;
     font-family:'Mate SC', serif;
-    color: #f6eee1;
+    color: $color-fondo2;
     font-size: 40px;
 
   }
 
-
-
   .parrafoubic{
     
-    color: #e67380;
+    color: $color-fondo4;
     font-size: 20px;
 
 }
 
+.row{
+  justify-content: center;
+}
 
+.fondoUbicacion{
+  background: linear-gradient(180deg, rgba(166,44,85,1) 0%, rgba(253,209,208,1) 50%, rgba(246,238,225,1) 100%);
+}
 
 
   /* Media Query */
 
 @media screen and (max-width:320px) {
     .fondonosotras{
-        background-image:url(./images/maria.jpg);
+        background-image:url(../images/maria.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -319,11 +335,11 @@ tFuente: 45px,
     @media screen and (max-width: 1200px) {
         main {
           padding-top: 0%;
-          background-color: #fdd1d0;
+          background-color: $color-fondo;
         }
       
         .bloque1 {
-          background-image: url(./images/maquina.jpg);
+          background-image: url(../images/maquina.jpg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: cover;
@@ -331,7 +347,7 @@ tFuente: 45px,
         }
       
         .bloque2 {
-          background-image: url(./images/operadora.jpg);
+          background-image: url(../images/operadora.jpg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: cover;
@@ -353,7 +369,7 @@ tFuente: 45px,
       
         @media screen and (max-width: 500px) {
           .fondonosotras {
-            background-image: url(./images/maria.jpg);
+            background-image: url(../images/maria.jpg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
@@ -366,16 +382,16 @@ tFuente: 45px,
           
           .titulonosotras {
             text-align: center;
-            color: #f6eee1;
-            font-size: 25px;
+            color: $color-fondo2;
+            font-size: 27px;
             font-family: "Mate SC", serif;
             font-weight: 600;
           }
           
           .parrafonosotras {
             text-align: center;
-            color: #a62c55;
-            font-size: 15px;
+            color: $color-fondo3;
+            font-size: 18px;
             font-weight: 600;
           }
       

@@ -38,7 +38,7 @@ main {
 }
 
 .fondoPrincipal {
-  background-image: url(./images/donnaprincipal.jpg);
+  background-image: url(../images/donnaprincipal.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -51,6 +51,7 @@ main {
   font-size: 40px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 500;
+  text-shadow: 2px 2px #a62c55;
 }
 
 .texto-principal {
@@ -60,6 +61,7 @@ main {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 500;
   font-style: italic;
+  text-shadow: 2px 2px #fdd1d0;
 }
 
 .bloque1, .bloque2 {
@@ -106,7 +108,7 @@ p {
 /* CSS POR SECCIONES */
 /* Nosotras */
 .fondonosotras {
-  background-image: url(./images/maria.jpg);
+  background-image: url(../images/maria.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -165,6 +167,15 @@ h5 {
   font-size: 20px;
 }
 
+.carousel-caption {
+  background-color: rgba(253, 209, 208, 0.6);
+  color: #a62c55;
+}
+
+.d-none {
+  display: block !important; /* Se agrega !important para pisar un estilo de bootsrap */
+}
+
 /* Turnos */
 .tituloturnos {
   text-align: center;
@@ -215,6 +226,10 @@ h5 {
   font-size: 16px;
 }
 
+.fondoTurnos {
+  background: linear-gradient(180deg, rgb(166, 44, 85) 0%, rgb(253, 209, 208) 50%, rgb(246, 238, 225) 100%);
+}
+
 /* Ubicacion */
 .tituloubic {
   text-align: center;
@@ -229,37 +244,39 @@ h5 {
   font-size: 20px;
 }
 
+.row {
+  justify-content: center;
+}
+
+.fondoUbicacion {
+  background: linear-gradient(180deg, rgb(166, 44, 85) 0%, rgb(253, 209, 208) 50%, rgb(246, 238, 225) 100%);
+}
+
 /* Media Query */
 @media screen and (max-width: 320px) {
   .fondonosotras {
-    background-image: url(./images/maria.jpg);
+    background-image: url(../images/maria.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 0%;
   }
-
   .itemstratam {
     display: none;
   }
-
   .fondoformulario {
     width: 300px;
   }
-
   .imgt {
     height: 479px;
   }
-
   .imgtratam {
     padding: 0%;
     margin-left: 0%;
   }
-
   .navfooter {
     padding: 31px;
   }
-
   .mapa {
     margin-left: 0%;
   }
@@ -269,60 +286,52 @@ h5 {
     padding-top: 0%;
     background-color: #fdd1d0;
   }
-
   .bloque1, .bloque2 {
-    background-image: url(./images/maquina.jpg);
+    background-image: url(../images/maquina.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     grid-template-columns: 100%;
   }
-
   .bloque2 {
-    background-image: url(./images/operadora.jpg);
+    background-image: url(../images/operadora.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     grid-template-columns: 100%;
   }
-
   .imagen {
     display: none;
   }
-
   .itemstratam {
     display: none;
   }
-
   .titulo {
     margin: 0;
   }
 }
 @media screen and (max-width: 500px) {
   .fondonosotras {
-    background-image: url(./images/maria.jpg);
+    background-image: url(../images/maria.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 17%;
   }
-
   .fondotextonosotras {
     background-color: rgba(253, 209, 208, 0.6);
   }
-
   .titulonosotras {
     text-align: center;
     color: #f6eee1;
-    font-size: 25px;
+    font-size: 27px;
     font-family: "Mate SC", serif;
     font-weight: 600;
   }
-
   .parrafonosotras {
     text-align: center;
     color: #a62c55;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
   }
 }/*# sourceMappingURL=style.css.map */
